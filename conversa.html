@@ -1,0 +1,135 @@
+<html>
+
+<head>
+    <title>Fale sobre você Joanne</title>
+</head>
+
+<body>
+
+    <h1>Diga quem é você Joanne?</h1>
+
+    <form >
+        <table border='1' cellpadding='10' width='600'>
+            <tr>
+                <td> <label>Qual a sua idade:</label></td>
+                <td> <input type="text" placeholder='Resposta' />
+                </td>
+            </tr>
+            <tr>
+                <td> <label>Conte um segredo seu:</label></td>
+                <td> <input type="password" placeholder='Segredo' required maxlength="100" /> </td>
+
+            </tr>
+
+            <tr>
+                <td> <label>E-mail para continuarmos conversando</label></td>
+                <td><input type="email" placeholder='Email' required /> </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>Para você qual é melhor?</p>
+                </td>
+                <td>
+                    <input type="radio" id="doce" name="comida" value="doce" checked>
+                    <label for="doce">Doce</label>
+
+                    <input type="radio" id="Salgado" name="comida" value="Salgado">
+                    <label for="Salgado">Salgado</label>
+                </td>                    
+            </tr>
+
+            <tr>
+                <td colspan='2' align="center">
+                    <input type="checkbox" id="viu" name="viu" value="viu">
+                    <label for="viu">Você já se viu fazendo as obras que tem hoje?</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='2' align="center">
+                    <label for="hoje">Qual a data mais marcante da sua vida?</label>
+                    <input type="date" id="hoje" name="hoje" value="" min="1965-07-31" max="2021-08-09">
+                </td>
+            </tr>
+            <tr>
+                <td colspan='2' align="center">
+                    <input type="range" id="nota" name="nota" min="1" max="10">
+                    <label for="nota">Nota para esse questionário:</label>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label>Qual o melhor filme ou livro que você produziu na sua opinião?</label>
+                </td>
+                <td>
+                    <select name='ler'>
+                        <option value='0' enabled>Selecione</option>
+                        <option value='1'>Harry Potter e a Pedra Filosofal, (1997)</option>
+                        <option value='2'>Harry Potter e a Câmara Secreta, (1998)</optioon>
+                        <option value='3'>Harry Potter e o Prisioneiro de Azkaban, (1999)</option>
+                        <option value='4'>Harry Potter e o Cálice de Fogo, (2000)</option>
+                        <option value='5'>Harry Potter e a Ordem da Fênix, (2003)</option>
+                        <option value='6'>Harry Potter e o Enigma do Príncipe, (2005)</option>
+                        <option value='7'>Animais Fantásticos e Onde Habitam, (2001)</option>
+                        <option value='8'>Quadribol Através dos Séculos, (2001)</optioon>
+                        <option value='9'>Os Contos de Beedle, o Bardo, (2008)</option>
+                        <option value='10'>Harry Potter e a Criança Amaldiçoada (sequela da série) (roteiro escrito por Jack Thorne), (2016)</option>
+                        <option value='11'>Short Stories from Hogwarts of Power, Politics and Pesky Poltergeists, (2016)</option>
+                        <option value='12'>Short Stories from Hogwarts of Heroism, Hardship and Dangerous Hobbies, (2016)</option>
+                        <option value='13'>Hogwarts: An Incomplete and Unreliable Guide, (2016)</option>
+                        <option value='14'>Animais Fantásticos e Onde Habitam (roteiro do filme), (2016)</optioon>
+                        <option value='15'>A Prequela de Harry Potter, (2008)</option>
+                        <option value='16'>Dumbledore's Army Reunites at Quidditch World Cup Final, (2014)</option>
+                        <option value='17'>Morte Súbita, (2012)</option>
+                        <option value='18'>O Chamado do Cuco (como Robert Galbraith), (2013)</option>
+                        <option value='19'>Vocação para o Mal (como Robert Galbraith), (2015)</option>
+                        <option value='20'>Vocação para o Mal (como Robert Galbraith), (2015)</option>
+                        <option value='21'>Branco Letal (como Robert Galbraith), (2018)</option>
+
+
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Há possibilidades de sair um novo filme/livro do Harry Potter?</label>
+                </td>
+                <td>
+                    <select>
+                        <option>Sim</option>
+                        <option>Não</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Qual seu maior sonho hoje?</label>
+                </td>
+                <td>
+                    <textarea id='texto' name='texto'>Ex.:Aproveitar a família</textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="avatar">Realize meu sonho e me mande uma foto da sua assinatura:</label></td>
+                <td>
+                    <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" required>
+                </td>
+            </tr>
+        </table>
+
+        <fieldset>
+            
+            <legend>Clique para enviar </legend>
+            <input type="submit" value="Submeter">
+
+        </fieldset>
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #titulo{
+            font-family: sans-serif;
+            color:#E7F7DC;
+            margin-left: 7%;
+        }
+
+        fieldset{
+            border:0;
+        }
+
+        body{
+            background-color: lightblue;
+            font-family: sans-serif;
+            font-size: 1em;
+            color:#E8796B;
+            
+        }
+
+        input, button{
+            border-radius: 5px;
+        }
+
+        .campo{
+            margin-bottom: 1em;
+        }
+
+        .campo label{
+            margin-bottom: 0.2em;
+            display: block;
+        
+        }
+
+        fieldset.grupo.campo{
+            float: left;
+            margin-right: 1em;
+            
+        }
+
+        .campo input[type="text"], .campo input[type="email"]{
+            padding: 0.2em;
+            border: 1px solid #E8796B;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+            display: block;
+            
+        }
+
+        .campo input:focus{
+            background: #B896FF;
+        }
+
+        .botao{
+            font-size: 1.2em;
+            background: #B869FF;
+            border: 0;
+            margin-bottom: 1em;
+            color: white;
+            padding: 0.2em 0.6em;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+        }
+
+        .botao:hover{
+            background: #B8BFFF;
+            box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+            text-shadow: none;
+        }
+
+        h1
+        {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 40px;
+            color:#B869FF;
+            position: relative;
+            margin-top: 100px;
+            margin-left: 50vh;
+
+        }
+        
+        h2{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+            color:#B869FF;
+            position: relative;
+            margin-top: 70px;
+            margin-left: 90vh;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <p><h1>Bem vindo, se você chegou até aqui quer saber de landing page né?</h1></p>
+    <p><h2>Então vamos nessa:</h2></p>
+    <br>
+
+
+
+        <p><h3>Landing Pages, também conhecidas como página de destino, têm como foco principal a conversão dos visitantes. São páginas com poucos elementos e focadas em um apenas CTA principal, evitando distrações e garantindo a conversão desejada.</h3></p>
+
+        <p><h3>Imagine o seguinte cenário: você está atraindo milhões de visitas todos os meses para o seu blog e seu site, porém, não consegue levá-las para o próximo passo, que é continuar caminhando pelo funil de vendas em direção à compra.</h3></p>
+        
+        <p><h3>Na teoria, todas essas visitas são ótimas, mas na prática elas não estão realmente impactando o seu negócio.</h3></p>
+        
+        <p><h3>Para isso, são criadas páginas específicas, que deixam de lado elementos que possam distrair a atenção do usuário, como menu, excesso de texto ou outras informações que são dispensáveis dentro do objetivo que é: fazer com que o usuário realize uma ação.</h3></p>
+        <br>
+
+    <p><h3 id="titulo">Gostou? Preencha essa informações para saber mais e ter acesso ao material:</h3></p>
+    
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset class="grupo">
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label for="profissao"><strong>Qual sua profissão?</strong></label>
+            <input type="text" name="profissao" id="profissao" required>
+        </div>
+
+        <div class="campo">
+            <label for="empresa"><strong>Qual sua empresa?</strong></label>
+            <input type="text" name="empresa" id="empresa" required>
+        </div>
+
+        <div class="campo">
+            <label for="cargo"><strong>Qual seu cargo?</strong></label>
+            <input type="text" name="cargo" id="cargo" required>
+        </div>
+
+        <div class="campo">
+            <label for="conta"><strong>5 x 5 = ?</strong></label>
+            <input type="number" name="conta" id="conta" required>
+        </div>
+
+        <button class="botao" type="submit"><strong>Receber material</strong></button>
+
+    </form>
+
+</body>
+
+</html>
