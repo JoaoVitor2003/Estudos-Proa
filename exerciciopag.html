@@ -1,0 +1,135 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina exercício</title>
+
+    <style>
+
+*{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: darkviolet;
+            font-family: sans-serif;
+            font-size: 1em;
+            margin-left: 0%;
+            margin-top: 4%;
+            justify-content: center;
+        }
+
+        main.container{
+            background-color: white;
+            width: 30vw;
+            height: 80vh;
+            margin-left: 35%;
+        }
+
+        input, button{
+            border-radius: 5px;
+        }
+
+        .campo{
+            margin-bottom: 1em;
+            margin-left: 35%;
+            margin-top: 5%;
+            
+        }
+
+        .campo label{
+            margin-bottom: 0.2em;
+            display: block;
+        
+        }
+
+        fieldset.grupo.campo{
+            float: left;
+            margin-right: 1em;
+            
+        }
+
+        .campo input[type="text"], .campo input[type="email"]{
+            padding: 0.2em;
+            border: 1px solid darkviolet;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+            display: block;
+            
+        }
+
+        .campo input:focus{
+            background: rgb(202, 97, 247);
+        }
+
+        .botao{
+            font-size: 1.2em;
+            background: darkviolet;
+            border: 0;
+            margin-bottom: 1em;
+            color: white;
+            padding: 0.2em 0.6em;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            margin-left: 35%;
+            
+        }
+
+        .botao:hover{
+            background: #B8BFFF;
+            box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+            text-shadow: none;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="container">
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset class="grupo">
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label for="profissao"><strong>Qual sua profissão?</strong></label>
+            <input type="text" name="profissao" id="profissao" required>
+        </div>
+
+        <div class="campo">
+            <label for="empresa"><strong>Qual sua empresa?</strong></label>
+            <input type="text" name="empresa" id="empresa" required>
+        </div>
+
+        <div class="campo">
+            <label for="cargo"><strong>Qual seu cargo?</strong></label>
+            <input type="text" name="cargo" id="cargo" required>
+        </div>
+
+        <div class="campo">
+            <label for="conta"><strong>5 x 5 = ?</strong></label>
+            <input type="number" name="conta" id="conta" required>
+        </div>
+
+        <button class="botao" type="submit"><strong>Receber material</strong></button>
+
+    </form>
+
+</main>
+</body>
+</html>
